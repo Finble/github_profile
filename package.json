@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "github_profile",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Github profile app",
+  "repository": "https://github.com/Finble/github_profile.git",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.3.1",
