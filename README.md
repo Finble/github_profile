@@ -10,19 +10,20 @@ Must-haves
 ==========
 
 ```
+:construction:
 As a hiring partner
 So I can view information about Github users rapidly
-I want a list of Github users
+I want a list of Maker's Github users
 ```
 ```
 As a hiring partner
 So I can find a specific user
-I want to SEARCH for a particular user by username 
+I want to SEARCH for a particular user by username
 ```
 ```
 As a hiring partner
 So I can find a specific user
-I want to VIEW a particular user by username 
+I want to VIEW a particular user by username
 ```
 ```
 As a hiring partner
@@ -51,7 +52,7 @@ I want animations on loading of new content
 ```
 As a hiring partner
 So I can enjoy my experience of using this app
-I want animations on search submission 
+I want animations on search submission
 ```
 As a hiring partner
 So I can easily use this app
