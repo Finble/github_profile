@@ -10,13 +10,25 @@ describe('githubProfile', function() {
     expect(name.getText()).toEqual('Adrian1707');
   });
 
-  it("should filter the user list", function() {
-    var userList = element.all(by.repeater('user in github.userData'));
-    var query = element(by.model('query'));
+  describe('searching user and user properties', function() {
+    var query;
 
-    expect(userList.count()).toBeGreaterThan(5);
+    beforeEach(function() {
+      query = element(by.model('query'));
+    });
 
-    query.sendKeys('tochman');
-    expect(userList.count()).toBe(1);
+    it("should filter the user list", function() {
+      var userList = element.all(by.repeater('user in github.userData'));
+      expect(userList.count()).toBeGreaterThan(5);
+      query.sendKeys('tochman');
+      expect(userList.count()).toBe(1);
+    });
+
+    it("should show an avatar for a user", function(){
+      query.sendKeys('Adrian1707');
+      var image = $('img');
+      var imageUrl = image.getAttribute('src');
+      expect(imageUrl).toEqual("https://avatars.githubusercontent.com/u/10603440?v=3");
+    });
   });
 });
