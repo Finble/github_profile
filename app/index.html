@@ -10,8 +10,10 @@
     <body>
 
         <section ng-controller='GithubProfileCtrl as github'>
-            <li ng-repeat='users in github.userData'>
-                <p class='name'>{{users.login}}</p>
+            <label>Search</label>
+            <input ng-model='query'>
+            <li ng-repeat='user in github.userData | filter: query' >
+                <p class='name'>{{user.login}}</p>
             </li>
         </section>
         <script src="bower_components/angular/angular.js"></script>
