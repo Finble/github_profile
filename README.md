@@ -15,7 +15,6 @@ So I can view information about Github users rapidly
 I want a list of Maker's Github users
 ```
 
-:construction:
 ```
 As a hiring partner
 So I can find a specific user
