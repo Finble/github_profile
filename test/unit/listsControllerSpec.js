@@ -16,4 +16,14 @@ describe('listsController', function() {
         $httpBackend.flush();
         expect(ctrl.userData).toEqual([{login: 'Adrian1707'}]);
     });
+
+    // I don't think this test will work
+    // Haven't had chance to try it as I have been blocked from making
+    // any more API calls tonight
+    it('should get the number of followers', function() {
+        $httpBackend.expectGET('https://api.github.com/users/Adrian1707')
+            .respond([{followers: 24}]);
+        $httpBackend.flush();
+        expect(ctrl.userDetails).toEqual([{followers: 24}]);
+    });
 });

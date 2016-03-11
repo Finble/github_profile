@@ -4,5 +4,7 @@
     <li ng-repeat='user in github.userData | filter: query' >
         <img ng-src='{{user.avatar_url}}' alt='{{user.login}}'>
         <a href="#/users/{{user.login}}" class='name'>{{user.login}}</a>
+        <p>Followers: <span class="followers">{{user.followers}}</span></p>
+        <p>Repositories: <span class="repositories">{{user.repos}}</span></p>
     </li>
 </section>

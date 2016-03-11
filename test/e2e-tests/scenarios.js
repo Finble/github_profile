@@ -31,6 +31,21 @@ describe('githubProfile', function() {
             expect(imageUrl).toEqual("https://avatars.githubusercontent.com/u/10603440?v=3");
         });
 
+        it("should display the number of followers per user", function() {
+            query.sendKeys('Adiran1707');
+            var followers = $(".followers");
+            expect(followers.getText()).toEqual('24');
+        });
+
+        // This test was written after I was blocked from making API
+        // requests therefore it hasn't been tested,
+        // also the number 52 may be completely wrong so you will have to double check
+        it("should display the number of public repos per user", function() {
+            query.sendKeys('Adrian1707');
+            var repos = $('.Repositories');
+            expect(repos.getText()).toEqual('52');
+        });
+
         describe('showing the user', function() {
             var query;
 
