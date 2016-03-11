@@ -31,6 +31,12 @@ describe('githubProfile', function() {
             expect(imageUrl).toEqual("https://avatars.githubusercontent.com/u/10603440?v=3");
         });
 
+        it("should show the number of repos for a user", function() {
+            var no_of_repos = $('.no_of_repos');
+            query.sendKeys('Adrian1707');
+            expect(no_of_repos.getText()).toEqual();
+        });
+
         describe('showing the user', function() {
             var query;
 

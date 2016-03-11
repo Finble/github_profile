@@ -1,8 +1,11 @@
 <section ng-controller='GithubProfileCtrl as github'>
     <label>Search</label>
     <input ng-model='query'>
-    <li ng-repeat='user in github.userData | filter: query' >
+    <!-- <li ng-repeat='user in github.userData | filter: query' >
         <img ng-src='{{user.avatar_url}}' alt='{{user.login}}'>
+        <p>{{user.repos_url}}</p>
+        <p>{{user.repoData.length}}</p>
+        <!-- <small>{{repo.description}}</small>
         <a href="#/users/{{user.login}}" class='name'>{{user.login}}</a>
-    </li>
+    </li> -->
 </section>
