@@ -26,12 +26,12 @@ So I can find a specific user
 I want to VIEW a particular user by username
 ```
 ```
-:construction:
 As a hiring partner
 So I can see what a user looks like
 I want to view each user's avatar in the list
 ```
 ```
+:construction:
 As a hiring partner
 So I can see how popular a user is
 I want to view the number of followers for each user in the list
